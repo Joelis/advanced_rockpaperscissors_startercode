@@ -20,7 +20,7 @@
 
 //GLOBAL VARIABLES
 
-
+/* global $ */
 
 //FUNCTIONS
 
@@ -28,3 +28,11 @@
 
 // DOCUMENT READY FUNCTION
 
+ $(document).ready(function() {
+
+             $("#submit-name").click(function() {
+                 var a = $("#name").val();
+                 alert(a);
+                 $("#greeting").text(a);
+             });
+         })
