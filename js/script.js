@@ -36,3 +36,11 @@
                  $("#greeting").text(a);
              });
          })
+
+$(document).ready(function(){
+    $("#filter").click(function(){
+        var random = Math.floor(Math.random() *5) +1;
+        alert(random);
+    });
+    
+});

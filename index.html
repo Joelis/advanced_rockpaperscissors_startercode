@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-      <title>RPS Game</title>
-      <!-- Link CSS here -->
-    <link type='text/css' rel='stylesheet' href='css/style.css' />  
-      <!-- Link JQuery here -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
-       <!-- Link Javascript File here -->
-      <script src='js/script.js'></script>
-       <!-- Latest compiled and minified Bootstrap CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  </head>
+<head>
+  <title>RPS Game</title>
+  <!-- Link CSS here -->
+  <link type='text/css' rel='stylesheet' href='css/style.css' />
+  <!-- Link JQuery here -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <!-- Link Javascript File here -->
+  <script src='js/script.js'></script>
+  <!-- Latest compiled and minified Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
 
-  <body>
-    //   <!-- TASK 1: In the div below. 
+<body>
+  //
+  <!-- TASK 1: In the div below. 
     //     1. In a header tag, add a title.
     //     2. In a paragraph tag, add instructions on how to play the game.
     //     3. Add a RPS image.
@@ -22,19 +24,28 @@
     //     5. Add divs to record User Choice and Computer Choice.
     //     6. Add a div to record the Winner.
     // -->
-    <div class="container text-center">
-    
-  <h1> Rock Paper Scissors Game </h1>    
-<p>  Rock Paper Scissors is a hand game played, typically, between two people, that requires luck and basic psychology. The two players show a hand gesture (rock, paper, or scissors) and depending on the gestures each displays, one person wins. Rock beats scissors, scissors beats paper, and paper beats rock. "Rock" is isplayed as a closed fist, "Paper" is an open and flat hand, and "Scissors" is the index and middle finger extended into a "V" formation. If both players show the same gesture then it results in a tie.</p>
-<img src="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png">
+  <div class="container text-center">
 
+    <h1> Rock Paper Scissors Game </h1>
+    <p> Rock Paper Scissors is a hand game played, typically, between two people, that requires luck and basic psychology. The two players show a hand gesture (rock, paper, or scissors) and depending on the gestures each displays, one person wins. Rock beats
+      scissors, scissors beats paper, and paper beats rock. "Rock" is isplayed as a closed fist, "Paper" is an open and flat hand, and "Scissors" is the index and middle finger extended into a "V" formation. If both players show the same gesture then
+      it results in a tie.</p>
+    <img src="https://pxt.azureedge.net/blob/68f66c3ddc3acfc4c53157abf92eace202d46db2/static/courses/csintro/conditionals/rock-paper-scissors-items.png">
+
+</div>
+<div class="row">
+  <div class="col-xs-4">
+    <p> User Choice</p>
+  </div>
+  <div class="col-xs-4"> 
+  <input class="col-xs-4" id="name" />
+    <button id="submit-name"> Play Game </button>
     </div>
-
-<div class="col-mid-6"> 
-  <p> User Choice</p>
-  <input id="name"/>  
-<button id="submit-name"> Play Game </button>
-<p id="greeting"> </p>
-  </body>
+  <div class="col-xs-4">
+    <p id="greeting"> </p>
+    <p> Computer Choice</p>
+  </div>
+</div>
+</body>
 
 </html>
